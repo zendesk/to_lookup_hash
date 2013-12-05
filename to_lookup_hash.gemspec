@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["pawel.obrok@gmail.com"]
   spec.description   = %q{Adds methods for converting enumerables to lookup hashes}
   spec.summary       = %q{Adds methods for converting enumerables to lookup hashes}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/basecrm/to_lookup_hash"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
