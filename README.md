@@ -1,6 +1,7 @@
 # ToLookupHash
 
-TODO: Write a gem description
+Easily generate a lookup hash from an Enumerable to later
+perform repeated searches by something
 
 ## Installation
 
@@ -18,7 +19,20 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Person = Struct.new(:name, :surname)
+people = [Person.new('John', 'Smith'), Person.new('Jim', 'Dougan')]
+
+people.to_lookup_hash(&:name) 
+# => {"John"=>#<struct Person name="John", surname="Smith">, "Jim"=>#<struct Person name="Jim", surname="Dougan">}
+
+
+people.to_lookup_hash_with_value do |person|
+  [person.name, person.surname]
+end
+# => {"John"=>"Smith", "Jim"=>"Dougan"}
+
+```
 
 ## Contributing
 
