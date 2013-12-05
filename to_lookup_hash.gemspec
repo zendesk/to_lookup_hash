@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ToLookupHash::VERSION
   spec.authors       = ["Paweł Obrok"]
   spec.email         = ["pawel.obrok@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Adds methods for converting enumerables to lookup hashes}
+  spec.summary       = %q{Adds methods for converting enumerables to lookup hashes}
   spec.homepage      = ""
   spec.license       = "MIT"
 
